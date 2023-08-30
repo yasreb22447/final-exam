@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+
+{% block title %}
+exam
+{% endblock %}
+{% block content %}
+<h1>Question 1</h1>
+
+<ul>
+  {% for x in mymembers %}
+    <li>{{ x.title }} <br>{{ x.content }}<br> {{ x.pub_date }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

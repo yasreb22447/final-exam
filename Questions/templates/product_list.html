@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+
+{% block title %}
+exam
+{% endblock %}
+{% block content %}
+<h1>Question 4</h1>
+
+<ul>
+  {% for x in pro %}
+    <li>{{ x.name }}<br> {{ x.price }}<br> {{ x.description }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
